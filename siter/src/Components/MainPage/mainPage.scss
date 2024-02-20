@@ -1,0 +1,76 @@
+.main-page{
+    width: 1234px;
+    height: 821px;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    background: #E5E5E5;
+    &__side-by-side{
+      display: flex;
+    }
+    &__content{
+      display: flex;
+      width: 994px;
+    }
+    &__content-left-side{
+      width: 874px;
+      height: 498px;
+      margin-top: 30px;
+      margin-left: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #FFFFFF;
+    }
+    &__centered{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__sidebar{
+        height: 58px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 14.7px;
+        padding-right: 8px;
+        background-color: $mainColor;
+        
+        &img{
+            width: 27.44px;
+            height: 28px;
+        }
+    }
+    .card-container{
+      margin: 7px;
+      width: 240px;
+      height: 142px;
+      border-radius: 5px;
+    }
+    &__preview-btn{
+        width: 87px;
+        height: 33px;
+        background: $backgroundColor;
+        border-radius: 5px;
+        border: none;
+        color:#FFFFFF;
+    }
+    .selected-item{
+      box-sizing: border-box;
+       border: 1px dotted #3E87F8;
+       background-color: #70B2FF;
+    }
+.main-page_item.selected {
+    animation-name: slideIn; 
+    animation-duration: 1s
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}

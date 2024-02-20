@@ -1,0 +1,40 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    font-family: Arial, sans-serif;
+  }
+  
+  .letter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Change color as needed */
+    animation: fadeIn 0.5s ease-in-out alternate infinite;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .S {
+    animation-delay: 0.1s;
+  }
+  
+  .i {
+    animation-delay: 0.2s;
+  }
+  
+  .t {
+    animation-delay: 0.3s;
+  }
+  
+  .e {
+    animation-delay: 0.4s;
+  }
+  
+  .r {
+    animation-delay: 0.5s;
+  }
+  
